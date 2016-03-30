@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body {
+    color: #252525;
+    font-family: '微软雅黑', arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    width: 200px;
+}
+
+body a {
+    color: #4285f4;
+    display: inline;
+    font-size: 11px;
+}
+
+.content {
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f0f0f0;
+    font-size: 11px;
+    padding: 5px;
+    margin-top: 7px;
+}
+
+.msg {
+    margin-top: 20px;
+    font-size: 10px;
+    color: gray;
+    height: 32px;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rotateIn {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -180deg);
+        transform: rotate3d(0, 0, 1, -180deg);
+    }
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, -180deg);
+        transform: rotate3d(0, 0, 1, -180deg);
+    }
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.rotateIn {
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
